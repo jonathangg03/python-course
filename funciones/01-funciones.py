@@ -1,10 +1,10 @@
-def hola(nombre, apellido):  # Al defined parametters are mandatory
+def hola(nombre, apellido="Feliz"):  # Default values for parametters
     print("Hola mundo")
     print(f"Bienvenido {nombre} {apellido}")
 
 
 hola("Jonathan", "García")
-hola("Chanchito", "feliz")
+hola("Chanchito")
 
 # difference beetween paremetter and argument:
 # what we use whem we define a function is a parametter
