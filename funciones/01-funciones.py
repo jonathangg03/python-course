@@ -5,6 +5,8 @@ def hola(nombre, apellido="Feliz"):  # Default values for parametters
 
 hola("Jonathan", "García")
 hola("Chanchito")
+hola(apellido="Gonzalez", nombre="David")
+# Named args, if we name one, all have to be named
 
 # difference beetween paremetter and argument:
 # what we use whem we define a function is a parametter
