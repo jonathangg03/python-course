@@ -24,11 +24,11 @@ usuarios = [
 def ordena(elemento):
     return elemento[1]
 
-# usuarios.sort() this will order by the element inside, but only if the 1st element of each child array is the number
-
 
 # we must write the name of the parameters
-usuarios.sort(key=ordena, reverse=True)
+usuarios.sort(key=lambda el: el[1])  # this is the same function ordena does
+# a lamda function is an anonymous function
+# the first element is the parameter, the second one is ":", and the third one is the return value
 
 print(usuarios)
 # If we have a list of list, sort() method can sort the list, but only if the 1st element
